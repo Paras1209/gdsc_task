@@ -1,0 +1,164 @@
+<html>
+<head>
+	<title>my website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+	*{
+		margin: 0;
+		box-sizing:border-box;
+
+	}
+body{
+
+}
+
+.container{
+	border: 1rem solid black;
+	border-radius: 2px;
+	display: grid;
+	grid-template-rows:repeat(4,1fr);
+	grid-template-columns:repeat(3,1fr);
+	gap:10px;
+	background-color: #000;
+
+	height: 100vh;
+	width: auto;
+}
+
+.item{
+	padding: 0.5rem 0.2rem 0.3rem 0.4rem;
+	color: white;
+	border-radius: 0.5rem;
+	font-size: 1.1rem;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	overflow: auto;
+	white-space: pre-wrap;
+	line-height: 1.5;
+	ffont-family: "Titillium Web", sans-serif, "Quicksand";
+  font-weight: 300;
+  font-style: italic;
+	
+}
+
+p{
+	opacity: 0.1;
+	 transition: opacity 0.3s ease;
+}
+
+p:hover{
+	opacity: 1;
+}
+.header{
+	grid-column:span 3;
+	background-color: white;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	color:black;
+	/*font-size: 3rem;*/
+}
+.red{
+	grid-row:span 2;
+	background-color: red;
+	color: black;
+
+}
+
+.purple{
+	grid-column:3/4;
+	grid-row:span 2;
+	background-color: #c1a9f8;
+	color: black;
+
+}
+
+.green{
+	grid-column:span 2;
+	background-color: #a4ed91;
+	color: black;
+
+}
+
+.beige{
+	background-color: #f8e5d6;
+	color: black;
+}
+
+.center{
+	grid-column:2/3;
+	background-color: black;
+}
+
+h1 {
+  animation: bounce 2s infinite;
+}
+
+h1:hover{
+	text-decoration: underline;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Move up by 20px */
+  }
+}
+
+
+
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="item header"><h1>Welcome to the Task website</h1></div>
+
+<div class="item red"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div class="item beige"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div class="item purple"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div class="item center"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div class="item green"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div class="item beige"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+
+</div>
+</body>
+</html>
